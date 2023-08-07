@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 // Import Styled Components:
 import Container from '@/components/ui/Container';
-import { Button, ButtonMenu, ButtonLink } from '@/components/ui/Buttons';
+import { ButtonMenu, ButtonLink } from '@/components/ui/Buttons';
 import { NavLink } from '@/components/ui/NavLink';
 import { NavMenu } from './NavMenu';
 import { Nav, NavFlex, BluredBg } from './styled';
@@ -47,9 +47,7 @@ const Navbar = () => {
 	
 	return (
 		<Nav>
-			{
-				bluredNav && <BluredBg />
-			}
+			{ bluredNav && <BluredBg /> }
 			<Container>
 
 				<div className="flex justify-between items-center">

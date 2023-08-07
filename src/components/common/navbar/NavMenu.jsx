@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // Import Packeges:
 import { useRouter } from "next/router";
@@ -8,6 +8,7 @@ import { MenuContainer, NavList, NavItem, NavLink, MenuDrop, MenuAside, Backdrop
 
 export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 
+	const [isMobile, setIsMobile] = useState(false);
 	const menuDrop = useRef(null);
 	const router = useRouter();
 
@@ -19,30 +20,35 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 
 		const listItem = document.querySelectorAll("#nav-menu ul li a");
 		listItem.forEach((e) => {
-			e.classList.remove('text-orange-500');
+			e.classList.remove('text-orange-500', 'lg:text-light');
 		});
 
-		elem === false ?
-		menuDrop.current.setAttribute("style",
-			`
-				--block-left: ${0}px;
-				--block-width: ${0}px;
-				opacity: 0;
-				visibility: hidden
-			`
-		) :
-		menuDrop.current.setAttribute("style",
-			`
-				--block-left: ${elem.offsetLeft}px;
-				--block-width: ${elem.clientWidth}px;
-				opacity: 1;
-				visibility: visible
-			`
-		);
+		if (  elem === false ) {
+			menuDrop.current.setAttribute("style",
+				`
+					--block-left: ${0}px;
+					--block-width: ${0}px;
+					opacity: 0;
+					visibility: hidden
+				`
+			);
+		} else {
+			elem.classList.add('text-orange-500', 'lg:text-light')
+			menuDrop.current.setAttribute("style",
+				`
+					--block-left: ${elem.offsetLeft}px;
+					--block-width: ${elem.clientWidth}px;
+					opacity: 1;
+					visibility: visible
+				`
+			);
+		}
+		
 	};
   
-	// For Navbar Menu Effects
 	useEffect(() => {
+
+		// For Navbar Menu Effects
 		const navMenu = document.querySelector("#nav-menu aside");
 		const listItem = document.querySelectorAll("#nav-menu ul li a");
 
@@ -55,7 +61,7 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 				if (router.pathname === "/") {
 					navEffectHandler(listItem[0]);
 				} else if (e.href.includes(router.pathname)) {
-					navEffectHandler(e);
+					navEffectHandler(e)
 				} else if (router.pathname === "/contact") {
 					navEffectHandler(false)
 				}
@@ -64,11 +70,23 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 			if (router.pathname === "/") {
 				navEffectHandler(listItem[0]);
 			} else if (e.href.includes(router.pathname)) {
-				navEffectHandler(e);
-		  	} else if (router.pathname === "/contact") {
-				navEffectHandler(false)
-			}
+				navEffectHandler(e)
+		   	} else if (router.pathname === "/contact") {
+			   navEffectHandler(false)
+		    }
 	  	});
+
+		// For Navbar Menu Mobile Exclude Contact-Us Item
+		const handleResize = () => {
+			setIsMobile(window.innerWidth < 1024);
+		};
+	
+		window.addEventListener('resize', handleResize);
+		handleResize();
+	
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
 
 	}, [router]);
   
@@ -77,13 +95,24 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 
 		<MenuAside className="" isOpen={isOpen}>			
 			<NavList>
-				{items.map((item, idx) => (
-				<NavItem key={idx}>
-					<NavLink href={`${item.path}`} onClick={handlerCloseMenu}>
-						{item.label}
-					</NavLink>
-				</NavItem>
-				))}
+
+			{isMobile ? 
+				items.map((item, idx) => (
+					<NavItem key={idx}>
+						<NavLink href={`${item.path}`} onClick={handlerCloseMenu}>
+							{item.label}
+						</NavLink>
+					</NavItem>
+				))
+			:
+				items.filter(item => item.path !== '/contact').map((item, idx) => (
+					<NavItem key={idx}>
+						<NavLink href={`${item.path}`} onClick={handlerCloseMenu}>
+							{item.label}
+						</NavLink>
+					</NavItem>
+				))
+			}
 			</NavList>
 
 			<MenuDrop ref={menuDrop} />

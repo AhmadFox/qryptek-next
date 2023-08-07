@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
 
 const linkStyle = (({className}) => [
-	tw`hover:text-orange-500 ease-in-out duration-300 font-primary text-sm 3xl:text-base`,
+	tw`hover:text-orange-500 font-primary text-sm 3xl:text-base ease-in-out duration-300`,
 	className
 ]);
 

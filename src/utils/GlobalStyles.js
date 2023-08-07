@@ -2,7 +2,9 @@ import React, { Fragment } from "react";
 import { Global, css } from "@emotion/react";
 import tw, { GlobalStyles as BaseStyles } from "twin.macro";
 
-const customStyles = css``;
+const customStyles = css`
+
+`;
 
 const GlobalStyles = () => (
   <Fragment>
