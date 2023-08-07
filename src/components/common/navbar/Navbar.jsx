@@ -8,7 +8,7 @@ import Container from '@/components/ui/Container';
 import { Button, ButtonMenu } from '@/components/ui/Buttons';
 import { NavLink } from '@/components/ui/NavLink';
 import { NavMenu } from './NavMenu';
-import { Nav, NavFlex } from './styled';
+import { Nav, NavFlex, BluredBg } from './styled';
 
 const ItemsList = [
 	{ label: 'Home', path: '/' },
@@ -24,6 +24,8 @@ const Navbar = () => {
 	const [ bluredNav, setBluredNav] = useState(false);
 
 	const handlerOpenMenu = () => {
+		const bodyTag = document.querySelector('html body');
+		!openMenu ? bodyTag.style.overflow = 'hidden' : bodyTag.style.overflow = ''
 		setOpenMenu(!openMenu);
 	}
 
@@ -40,7 +42,10 @@ const Navbar = () => {
 	}, []);
 	
 	return (
-		<Nav className={`${bluredNav && 'backdrop-blur-md bg-dark bg-opacity-50'}`}>
+		<Nav>
+			{
+				bluredNav && <BluredBg />
+			}
 			<Container>
 
 				<div className="flex justify-between items-center">
