@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 // Import Packeges:
-import Link from 'next/link';
 import Image from 'next/image';
 
 // Import Styled Components:
@@ -41,11 +40,11 @@ const Navbar = () => {
 	}, []);
 	
 	return (
-		<Nav className={`${bluredNav && 'backdrop-blur-md bg-dark/30 bg-opacity-100'}`}>
+		<Nav className={`${bluredNav && 'backdrop-blur-md bg-dark bg-opacity-50'}`}>
 			<Container>
 
 				<div className="flex justify-between items-center">
-					<Link href="/" className='z-[4]'>
+					<NavLink href="/" className='z-[4]'>
 						<Image
 							className="w-36 md:w-44 xl:w-54"
 							src="/logo-brand.svg"
@@ -54,7 +53,7 @@ const Navbar = () => {
 							height={108}
 							priority
 						/>
-					</Link>
+					</NavLink>
 
 					<NavMenu items={ItemsList} isOpen={openMenu} setCloseMenu={setOpenMenu}>
 						<NavFlex>
