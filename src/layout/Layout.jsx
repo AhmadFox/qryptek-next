@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
+
 import Head from 'next/head';
-import Navbar from '@/components/common/Navbar';
+import Navbar from '@/components/common/navbar/Navbar';
 import Footer from '@/components/common/Footer';
 
 const Layout = ({ children }) => {
@@ -24,4 +25,4 @@ const Layout = ({ children }) => {
 	)
 }
 
-export default Layout
+export default Layout;

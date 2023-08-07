@@ -1,10 +1,16 @@
+// Import Styled Components UI:
+import Container from "@/components/ui/Container";
+import Section from "@/components/ui/Section";
+import Title from "@/components/ui/Title";
 
 export default function Home() {
+
 	return (
-		<div className="">
+		<Section>
+			<Container>
+				<Title>Home Page</Title>
 
-			<h1 className="text-3xl">Home Page</h1>
-
-		</div>
+			</Container>
+		</Section>
 	)
 }

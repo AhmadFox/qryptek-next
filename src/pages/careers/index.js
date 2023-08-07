@@ -3,15 +3,15 @@ import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Title from "@/components/ui/Title";
 
-const About = () => {
-	
+const Careers = () => {
+
 	return (
 		<Section>
-			<Container>
-				<Title>About Us Page</Title>
-			</Container>
+		  <Container>
+			<Title>Careers Page</Title>
+		  </Container>
 		</Section>
 	)
 }
 
-export default About
+export default Careers;
