@@ -24,8 +24,6 @@ const Navbar = () => {
 	const [ bluredNav, setBluredNav] = useState(false);
 
 	const handlerOpenMenu = () => {
-		const bodyTag = document.querySelector('html body');
-		!openMenu ? bodyTag.style.overflow = 'hidden' : bodyTag.style.overflow = ''
 		setOpenMenu(!openMenu);
 	}
 
@@ -34,12 +32,17 @@ const Navbar = () => {
 	};
 
 	useEffect(() => {
+
+		const bodyTag = document.querySelector('html body');
+		openMenu ? bodyTag.style.overflow = 'hidden' : bodyTag.style.overflow = '';
+
 		window.addEventListener('scroll', handleScroll);
 		
 		return () => {
 		  window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+
+	}, [ openMenu ]);
 	
 	return (
 		<Nav>
