@@ -63,12 +63,13 @@ const Footer = () => {
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} className="w-5 h-5">
 										<path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
 									</svg>
+									<span className="sr-only">Subscribe Newsletter Button</span>
 								</Button>
 							</form>
 						</div>
 					</div>
 					<hr className="my-9 border-gray-800" />
-					<p className="text-gray-300 text-xs text-center font-semibold">© Copyright 2022 - Qryptek Inc. - All Rights Reserved.</p>
+					<p className="text-gray-100 text-xs text-center font-semibold">© Copyright 2022 - Qryptek Inc. - All Rights Reserved.</p>
 				</Container>
 			</Section>
 		</footer>
