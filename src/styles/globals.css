@@ -2,38 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+	font-family: "opensanse";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../../public/fonts/OpenSans-Regular.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+	font-family: "opensanse";
+	font-weight: 600;
+	font-style: normal;
+	src: url("../../public/fonts/OpenSans-SemiBold.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 }
 
-html, body {
-  @apply h-full
+@font-face {
+	font-family: "opensanse";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../../public/fonts/OpenSans-Bold.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-#__next {
-  @apply flex flex-col justify-between min-h-full
-}
-
-main {
-  @apply h-full mb-auto
+@font-face {
+	font-family: "pirulen";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../../public/fonts/pirulen.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 }

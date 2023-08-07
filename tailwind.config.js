@@ -6,12 +6,50 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'sm': '491px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1450px',
+      // => @media (min-width: 1536px) { ... }
+
+      '3xl': '1736px',
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'dark': '#010101',
+        'light': '#F1F1F1',
+        'gray-100': '#D2D2D2',
+        'gray-300': '#737373',
+        'gray-400': '#646464',
+        'gray-800': '#131313',
+        'orange-500': '#E76F2C',
+        'purple-500': '#6F2E8F',
+        'purple-600':'#5A2873',
+        'vaiolet-500': '#7C1DC9'
+      },
+      fontFamily: {
+        primary: "opensanse",
+        secondary: "pirulen"
+      },
+      spacing: {
+        '54': '13.5rem'
+      }
     },
   },
   plugins: [],
