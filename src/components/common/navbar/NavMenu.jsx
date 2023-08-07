@@ -22,14 +22,21 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 			e.classList.remove('text-orange-500');
 		});
 
-		elem.classList.add('text-orange-500', 'lg:text-light');
-		menuDrop.current.setAttribute(
-		"style",
-		`
-			--block-left: ${elem.offsetLeft}px;
-			--block-width: ${elem.clientWidth}px;
-			opacity: 1;
-			visibility: visible
+		elem === false ?
+		menuDrop.current.setAttribute("style",
+			`
+				--block-left: ${0}px;
+				--block-width: ${0}px;
+				opacity: 0;
+				visibility: hidden
+			`
+		) :
+		menuDrop.current.setAttribute("style",
+			`
+				--block-left: ${elem.offsetLeft}px;
+				--block-width: ${elem.clientWidth}px;
+				opacity: 1;
+				visibility: visible
 			`
 		);
 	};
@@ -45,18 +52,22 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 			});
   
 			navMenu.addEventListener("mouseleave", function () {
-			if (router.pathname === "/") {
-				navEffectHandler(listItem[0]);
-			} else if (e.href.includes(router.pathname)) {
-				navEffectHandler(e);
-			}  
+				if (router.pathname === "/") {
+					navEffectHandler(listItem[0]);
+				} else if (e.href.includes(router.pathname)) {
+					navEffectHandler(e);
+				} else if (router.pathname === "/contact") {
+					navEffectHandler(false)
+				}
 			});
   
 			if (router.pathname === "/") {
 				navEffectHandler(listItem[0]);
 			} else if (e.href.includes(router.pathname)) {
 				navEffectHandler(e);
-		  	}  
+		  	} else if (router.pathname === "/contact") {
+				navEffectHandler(false)
+			}
 	  	});
 
 	}, [router]);
@@ -69,7 +80,7 @@ export const NavMenu = ({ items, children, isOpen, setCloseMenu }) => {
 				{items.map((item, idx) => (
 				<NavItem key={idx}>
 					<NavLink href={`${item.path}`} onClick={handlerCloseMenu}>
-					{item.label}
+						{item.label}
 					</NavLink>
 				</NavItem>
 				))}

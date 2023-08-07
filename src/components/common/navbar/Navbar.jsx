@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 // Import Styled Components:
 import Container from '@/components/ui/Container';
-import { Button, ButtonMenu } from '@/components/ui/Buttons';
+import { Button, ButtonMenu, ButtonLink } from '@/components/ui/Buttons';
 import { NavLink } from '@/components/ui/NavLink';
 import { NavMenu } from './NavMenu';
 import { Nav, NavFlex, BluredBg } from './styled';
@@ -16,6 +16,7 @@ const ItemsList = [
 	{ label: 'Core Values', path: '/core-values' },
 	{ label: 'Careers', path: '/careers' },
 	{ label: 'About Us', path: '/about' },
+	{ label: 'Contact Us', path: '/contact' },
 ];
 
 const Navbar = () => {
@@ -66,7 +67,7 @@ const Navbar = () => {
 					<NavMenu items={ItemsList} isOpen={openMenu} setCloseMenu={setOpenMenu}>
 						<NavFlex>
 							<NavLink href="tel:7089646855" className='md:mr-6 xl:mr-9 hidden md:block relative md:z-[4] lg:z-1'>708.964.6855</NavLink>
-							<Button rounded="true" outline="true" effect="true" className='hidden md:block md:z-[4] lg:z-1'>contact us</Button>
+							<ButtonLink href="/contact" rounded="true" outline="true" effect="true" className='hidden md:block md:z-[4] lg:z-1'>contact us</ButtonLink>
 							<ButtonMenu isOpen={openMenu} className="ml-5" onClick={handlerOpenMenu} />
 						</NavFlex>
 					</NavMenu>

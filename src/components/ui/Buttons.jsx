@@ -43,7 +43,7 @@ export const ButtonLink = ({ children, outline, rounded, fill, effect, className
 	return (
 		<BtnLink outline={outline} rounded={rounded} fill={fill} effect={effect} href={href} className={className}>
 			{
-				effect ? <span className='relative z-2'>{children}</span> : children
+				effect ? <span className='relative z-[3]'>{children}</span> : children
 			}	
 		</BtnLink>
 	)
