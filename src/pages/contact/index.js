@@ -1,14 +1,14 @@
 // Import Styled Components UI:
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
-import Title from "@/components/ui/Title";
+import { Heading } from "@/components/ui/Headings";
 
 const About = () => {
 	
 	return (
 		<Section>
 			<Container>
-				<Title>Contact Us Page</Title>
+				<Heading variant="h1">Contact Us Page</Heading>
 			</Container>
 		</Section>
 	)

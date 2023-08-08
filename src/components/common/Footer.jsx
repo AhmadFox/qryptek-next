@@ -4,8 +4,8 @@ import { useForm } from 'react-hook-form';
 // Import Styled Components:
 import Container from "../ui/Container";
 import Section from "../ui/Section";
-import Title from "../ui/Title";
 import Input from "../ui/Input";
+import { Title } from "../ui/Title";
 import { Button } from "../ui/Buttons";
 import { NavLink } from '@/components/ui/NavLink';
 
@@ -31,25 +31,25 @@ const Footer = () => {
 			<Section>
 				<Container>
 					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 3xl:gap-16 justify-center sm:justify-start mb-8 md:mb-12 xl:mb-20">
-						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-8 col-span-2 sm:col-span-1">
-							<Title className="text-orange-500 text-center sm:text-start">Quick Links</Title>
-							<ul className="grid justify-center sm:justify-start md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 sm:col-span-1">
+							<Title display="d4" className="text-orange-500 text-center sm:text-start">Quick Links</Title>
+							<ul className="grid justify-center sm:justify-start md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3">
 								{quickLinks.map((item, idx) => (
 									<li className="text-center sm:text-start" key={idx}>
-										<NavLink href={item.path} className="text-center sm:text-start">{item.title}</NavLink>
+										<NavLink href={item.path} className="text-center sm:text-start 3xl:text-lg">{item.title}</NavLink>
 									</li>
 								))}
 							</ul>
 						</div>
-						<div className="grid justify-center sm:justify-end lg:justify-normal gap-6 md:gap-4 xl:gap-y-8 col-span-2 sm:col-span-1 lg:pl-12 xl:pl-16 h-fit">
-							<Title className="text-orange-500 text-center sm:text-start">Contact</Title>
+						<div className="grid justify-center sm:justify-end lg:justify-normal gap-6 md:gap-4 xl:gap-y-5 col-span-2 sm:col-span-1 lg:pl-12 xl:pl-16 h-fit">
+							<Title display="d4" className="text-orange-500 text-center sm:text-start">Contact</Title>
 							<div className="grid gap-y-4 justify-center sm:justify-start">
-								<NavLink href="tel:7089646855" className="text-center sm:text-start">708.964.6855</NavLink>
-								<NavLink href="mailto:clientServices@qryptek.com" className="text-center sm:text-start">ClientServices@qryptek.com</NavLink>
+								<NavLink href="tel:7089646855" className="text-center sm:text-start 3xl:text-lg">708.964.6855</NavLink>
+								<NavLink href="mailto:clientServices@qryptek.com" className="text-center sm:text-start 3xl:text-lg">ClientServices@qryptek.com</NavLink>
 							</div>
 						</div>
-						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-8 col-span-2 md:col-span-1">
-							<Title className="text-orange-500 text-center sm:text-start">Receive news</Title>
+						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 md:col-span-1">
+							<Title display="d4" className="text-orange-500 text-center sm:text-start">Receive news</Title>
 							<form onSubmit={handleSubmit(onSubmit)} className="relative">
 								<div className="">
 									<Input className={`pr-12 ${errors && errors.email && '!border-red-400'}`} type="email" id="email" placeholder='Enter your email' {...register("email", {required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i})} />
@@ -69,7 +69,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<hr className="my-9 border-gray-800" />
-					<p className="text-gray-100 text-xs text-center font-semibold">© Copyright 2022 - Qryptek Inc. - All Rights Reserved.</p>
+					<p className="text-gray-500 text-sm text-center font-semibold">© Copyright 2022 - Qryptek Inc. - All Rights Reserved.</p>
 				</Container>
 			</Section>
 		</footer>

@@ -3,11 +3,58 @@
 @tailwind utilities;
 
 
+@font-face {
+	font-family: "OpenSanse";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+	font-family: "OpenSanse";
+	font-weight: 600;
+	font-style: normal;
+	src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+	font-family: "OpenSanse";
+	font-weight: 700;
+	font-style: normal;
+	src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased ;
+}
+
+@font-face {
+	font-family: "pirulen";
+	font-weight: 400;
+	font-style: normal;
+	src: url("/fonts/pirulen.ttf") format("truetype");
+	font-display: swap;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased ;
+}
+
+* {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+
 html, body {
 	@apply h-full;
 }
 
   body {
+	font-family: 'OpenSanse', sans-serif;
 	@apply bg-dark text-light font-primary;
   }
 
@@ -32,7 +79,8 @@ html, body {
   li,
   a
    {
-    @apply font-primary
+	font-family: 'OpenSanse', sans-serif;
+    @apply text-base
   }
 
   a {
@@ -54,45 +102,5 @@ html, body {
 [type="search"],
 select,
 textarea {
-    @apply appearance-none outline-none bg-transparent py-3 xl:py-4 3xl:py-5 border-0 border-b-2 border-orange-500 text-light
-}
-
-@font-face {
-	font-family: "opensanse";
-	font-weight: 400;
-	font-style: normal;
-	src: url("../../public/fonts/OpenSans-Regular.ttf") format("truetype");
-	font-display: swap;
-	-moz-osx-font-smoothing: grayscale !important;
-	-webkit-font-smoothing: antialiased !important;
-}
-
-@font-face {
-	font-family: "opensanse";
-	font-weight: 600;
-	font-style: normal;
-	src: url("../../public/fonts/OpenSans-SemiBold.ttf") format("truetype");
-	font-display: swap;
-	-moz-osx-font-smoothing: grayscale !important;
-	-webkit-font-smoothing: antialiased !important;
-}
-
-@font-face {
-	font-family: "opensanse";
-	font-weight: 700;
-	font-style: normal;
-	src: url("../../public/fonts/OpenSans-Bold.ttf") format("truetype");
-	font-display: swap;
-	-moz-osx-font-smoothing: grayscale !important;
-	-webkit-font-smoothing: antialiased !important;
-}
-
-@font-face {
-	font-family: "pirulen";
-	font-weight: 400;
-	font-style: normal;
-	src: url("../../public/fonts/pirulen.ttf") format("truetype");
-	font-display: swap;
-	-moz-osx-font-smoothing: grayscale !important;
-	-webkit-font-smoothing: antialiased !important;
+    @apply appearance-none outline-none bg-transparent py-3 xl:py-4 3xl:py-5 border-0 border-b border-orange-500 text-light
 }
