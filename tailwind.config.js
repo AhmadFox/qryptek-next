@@ -25,6 +25,19 @@ module.exports = {
       '3xl': '1736px',
       // => @media (min-width: 1536px) { ... }
     },
+    fontSize: {
+      xs: '0.56rem',//9px
+      sm: '0.75rem',//12px
+      base: '0.875rem',//14px
+      lg: '1rem',//16px
+      xl: '1.25rem',//20px
+      '2xl': '1.375rem', // 22px
+      '3xl': '1.953rem', // 31px
+      '4xl': '2.5rem', // 40px
+      '5xl': '3.052rem', // 48px
+      '6xl': '3.5rem', // 56px
+      '7xl': '4.375rem', // 70px
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -37,6 +50,7 @@ module.exports = {
         'gray-100': '#D2D2D2',
         'gray-300': '#737373',
         'gray-400': '#646464',
+        'gray-500': '#9E9E9E',
         'gray-800': '#131313',
         'orange-500': '#E76F2C',
         'purple-500': '#6F2E8F',
@@ -44,7 +58,7 @@ module.exports = {
         'vaiolet-500': '#7C1DC9'
       },
       fontFamily: {
-        primary: "opensanse",
+        primary: "OpenSanse",
         secondary: "pirulen"
       },
       spacing: {

@@ -3,8 +3,8 @@ import Link from "next/link";
 import tw, { styled } from "twin.macro";
 
 // Styled Components For Export [ use on Navbar Component ]
-export const Nav = tw.nav`py-3 md:py-4 sticky top-0 z-[4] bg-opacity-0 ease-in-out duration-500 overflow-hidden`;
-export const BluredBg = tw.div`absolute w-full h-full top-0 left-0 backdrop-blur-md bg-dark bg-opacity-50`;
+export const Nav = tw.nav`py-3 md:py-4 fixed w-full top-0 z-[4] bg-opacity-0 ease-in-out duration-500 overflow-hidden`;
+export const BluredBg = tw.div`absolute w-full h-full top-0 left-0 backdrop-blur-md bg-dark bg-opacity-50 ease-in-out duration-500`;
 export const NavFlex = styled.div`
   ${tw`flex flex-col gap-y-4 md:flex-row items-center`} justify-content:${(
 	props
@@ -15,10 +15,10 @@ export const NavFlex = styled.div`
 export const NavList = tw.ul`relative z-[2] flex flex-col gap-y-6 lg:flex-row lg:gap-y-0 lg:gap-x-9 2xl:gap-x-10 mt-3 md:mt-14 lg:mt-0`;
 export const NavItem = tw.li`flex lg:items-center lg:justify-center`;
 export const NavLink = styled(Link)`
-  ${tw`text-xl lg:text-sm xl:text-base font-semibold lg:font-normal ease-in-out duration-300 font-secondary lg:font-primary`}
+  ${tw`text-xl lg:text-base font-semibold ease-in-out duration-300 font-secondary lg:font-primary`}
 `;
 export const MenuDrop = styled.div`
-  ${tw`absolute h-[2.5px] rounded-full bottom-0 bg-orange-500 opacity-0 invisible hidden lg:block`}
+  ${tw`absolute h-[2px] rounded-full bottom-0 bg-orange-500 opacity-0 invisible hidden lg:block`}
   left: var(--block-left);
   width: var(--block-width);
   transition: 0.4s cubic-bezier(0.75, 0, 0, 1);

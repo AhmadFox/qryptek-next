@@ -1,15 +1,15 @@
 // Import Styled Components UI:
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
-import Title from "@/components/ui/Title";
+import { Heading } from "@/components/ui/Headings";
 
 const CoreValues = () => {
 
 	return (
 		<Section>
-		  <Container>
-			<Title>Core Values Page</Title>
-		  </Container>
+			<Container>
+				<Heading variant="h1">Core Value Page</Heading>
+			</Container>
 		</Section>
 	)
 }

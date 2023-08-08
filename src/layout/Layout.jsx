@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
 			<Head>
 				<title>Qryptek TechHub</title>
 				<meta charSet="utf-8" />
+				<meta name="format-detection" content="telephone=no, date=no, email=no, address=no" />
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<meta name="description" content="Qryptek Consulting Redefining Synergies Between Life Science and IT"></meta>
 			</Head>

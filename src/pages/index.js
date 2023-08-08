@@ -1,16 +1,9 @@
-// Import Styled Components UI:
-import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
-import Title from "@/components/ui/Title";
+// Import Home Page Sections:
+import Hero from "@/components/home/Hero"
 
 export default function Home() {
 
 	return (
-		<Section>
-			<Container>
-				<Title>Home Page</Title>
-
-			</Container>
-		</Section>
+		<Hero  />
 	)
 }
