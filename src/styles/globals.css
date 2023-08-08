@@ -1,6 +1,38 @@
 @tailwind base;
+* {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 6px;
+	padding: 0;
+}
+
+*::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary);
+	border-radius: 14px;
+	border: 5px solid transparent
+}
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--primary: #1D0937;
+	--secondary: #371A60;
+  }
 
 
 @font-face {
@@ -42,12 +74,6 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased ;
 }
-
-* {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-}
-
 
 html, body {
 	@apply h-full;
