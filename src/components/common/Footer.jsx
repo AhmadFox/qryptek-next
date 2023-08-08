@@ -27,7 +27,7 @@ const Footer = () => {
 	}
 
 	return (
-		<footer>
+        <footer>
 			<Section>
 				<Container>
 					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 3xl:gap-16 justify-center sm:justify-start mb-8 md:mb-12 xl:mb-20">
@@ -73,7 +73,7 @@ const Footer = () => {
 				</Container>
 			</Section>
 		</footer>
-	)
+    );
 }
 
 export default Footer;

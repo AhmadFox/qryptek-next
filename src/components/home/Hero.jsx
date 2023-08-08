@@ -19,7 +19,7 @@ const Hero = () => {
 					quality={100}
 					fill
 					sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
-					property
+					priority
 				/>
 			</div>
 			<Section variant="hero-block" className="h-full">
@@ -28,7 +28,7 @@ const Hero = () => {
 					<div className="grid grid-cols-12 gap-6 items-center">
 
 						{/* Beginning Heading Text */}
-						<div className="col-span-12 md:col-span-8">
+						<div className="col-span-12 md:col-span-8 xl:pt-52">
 							<Heading variant="h1" className="text-center md:text-start mb-6 sm:mb-0">
 								smart solutions powered by 
 								<Title display='d4' className='mx-3 text-vaiolet-500 inline-block relative before:w-full before:h-[2px] before:bg-vaiolet-500 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:mt-[4px]'> artificial </Title>
@@ -53,8 +53,8 @@ const Hero = () => {
 								width={474}
 								height={450}
 								quality={100}
-								layout="fixed"
-								loading="lazy"
+								ayout="responsive"
+								priority
 							/>
 						</div>
 					</div>
