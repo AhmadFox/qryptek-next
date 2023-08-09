@@ -2,7 +2,7 @@ import tw, { styled } from 'twin.macro';
 import Link from 'next/link';
 
 const linkStyle = (({className}) => [
-	tw`hover:text-orange-500 font-semibold capitalize ease-in-out duration-300`,
+	tw`hover:text-orange-500 font-semibold capitalize ease-in-out duration-300 text-sm`,
 	className
 ]);
 

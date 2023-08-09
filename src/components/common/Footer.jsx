@@ -36,7 +36,7 @@ const Footer = () => {
 							<ul className="grid justify-center sm:justify-start md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3">
 								{quickLinks.map((item, idx) => (
 									<li className="text-center sm:text-start" key={idx}>
-										<NavLink href={item.path} className="text-center sm:text-start 3xl:text-lg">{item.title}</NavLink>
+										<NavLink href={item.path} className="text-center sm:text-start">{item.title}</NavLink>
 									</li>
 								))}
 							</ul>
@@ -45,7 +45,7 @@ const Footer = () => {
 							<Title display="footer">Contact</Title>
 							<div className="grid gap-y-4 justify-center sm:justify-start">
 								<NavLink href="tel:7089646855" className="text-center sm:text-start 3xl:text-lg">708.964.6855</NavLink>
-								<NavLink href="mailto:clientServices@qryptek.com" className="text-center sm:text-start 3xl:text-lg">ClientServices@qryptek.com</NavLink>
+								<NavLink href="mailto:clientServices@qryptek.com" className="text-center sm:text-start">ClientServices@qryptek.com</NavLink>
 							</div>
 						</div>
 						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 md:col-span-1">

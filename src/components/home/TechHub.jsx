@@ -105,10 +105,10 @@ const TechHub = () => {
 											}
 										>
 										<div id={`collapsBody-${index}`}>
-											<p className="text-gray-400 mb-4 text-base md:text-lg lg:text-base xl:text-lg">
+											<p className="text-gray-400 mb-4">
 												{service.body}
 											</p>
-											<Link href={`services/${index}`} className='inline-flex items-center gap-x-3 uppercase font-semibold group text-base md:text-lg'>
+											<Link href={`services/${index}`} className='inline-flex items-center gap-x-3 uppercase font-semibold group text-sm'>
 												Learn More
 												<Button outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center stroke-dark group-hover:stroke-light group-hover:bg-orange-500">
 													<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} className="w-5 h-5">
