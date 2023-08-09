@@ -26,16 +26,16 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     fontSize: {
-      xs: '0.56rem',//9px
-      sm: '0.75rem',//12px
-      base: '0.875rem',//14px
-      lg: '1rem',//16px
-      xl: '1.25rem',//20px
-      '2xl': '1.375rem', // 22px
-      '3xl': '1.953rem', // 31px
+      xs: '0.75rem', //12px
+      sm: '0.875rem', //14px
+      base: '1rem', //16px
+      lg: '1.125rem', //18px
+      xl: '1.25rem', //20px
+      '2xl': '1.5rem', // 24px
+      '3xl': '1.953rem', // 32px
       '4xl': '2.5rem', // 40px
-      '5xl': '3.052rem', // 48px
-      '6xl': '3.5rem', // 56px
+      '5xl': '2.875rem', // 47px
+      '6xl': '3.75rem', // 60px
       '7xl': '4.375rem', // 70px
     },
     extend: {
@@ -65,7 +65,10 @@ module.exports = {
       },
       spacing: {
         '54': '13.5rem'
-      }
+      },
+      fill: {
+        gradient: 'url(#analyiz_svg__a)',
+      },
     },
   },
   plugins: [],

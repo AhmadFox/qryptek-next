@@ -1,16 +1,13 @@
 @tailwind base;
 * {
-	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-}
-
-/* Firefox */
-* {
+	-moz-osx-font-smoothing: grayscale;
+	/* Firefox Styling Scrollbar */
 	scrollbar-width: thin;
 	scrollbar-color: var(--secondary) var(--primary);
 }
 
-/* Chrome, Edge, and Safari */
+/* Styling Scrollbar Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
 	width: 6px;
 	padding: 0;
@@ -32,7 +29,7 @@
 :root {
 	--primary: #1D0937;
 	--secondary: #371A60;
-  }
+ }
 
 
 @font-face {
@@ -106,7 +103,7 @@ html, body {
   a
    {
 	font-family: 'OpenSanse', sans-serif;
-    @apply text-lg
+    @apply text-base
   }
 
   a {
@@ -128,7 +125,7 @@ html, body {
 [type="search"],
 select,
 textarea {
-    @apply appearance-none outline-none bg-transparent py-3 xl:py-4 3xl:py-5 border-0 border-b border-orange-500 text-light
+    @apply appearance-none outline-none bg-transparent py-3 xl:py-4 3xl:py-5 border-0 border-b border-orange-500 text-light text-base;
 }
 
 /* Brands Slider */

@@ -15,7 +15,7 @@ export const NavFlex = styled.div`
 export const NavList = tw.ul`relative z-[2] flex flex-col gap-y-6 lg:flex-row lg:gap-y-0 lg:gap-x-9 2xl:gap-x-10 mt-3 md:mt-14 lg:mt-0`;
 export const NavItem = tw.li`flex lg:items-center lg:justify-center`;
 export const NavLink = styled(Link)`
-  ${tw`text-xl lg:text-base font-semibold ease-in-out duration-300 font-secondary lg:font-primary`}
+  ${tw`text-xl lg:text-sm font-semibold ease-in-out duration-300 font-secondary lg:font-primary`}
 `;
 export const MenuDrop = styled.div`
   ${tw`absolute h-[2px] rounded-full bottom-0 bg-orange-500 opacity-0 invisible hidden lg:block`}
