@@ -3,6 +3,8 @@ import { Fragment } from "react";
 // Import Home Page Sections:
 import Hero from "@/components/home/Hero";
 import OurStory from "@/components/home/OurStory";
+import BrandSlider from "@/components/home/BrandSlider";
+import TechHub from "@/components/home/TechHub";
 
 export default function Home() {
 
@@ -10,6 +12,8 @@ export default function Home() {
 		<Fragment>
 			<Hero  />
 			<OurStory  />
+			<BrandSlider  />
+			<TechHub  />
 		</Fragment>
 	)
 }

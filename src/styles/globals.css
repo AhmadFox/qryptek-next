@@ -106,7 +106,7 @@ html, body {
   a
    {
 	font-family: 'OpenSanse', sans-serif;
-    @apply text-base
+    @apply text-lg
   }
 
   a {
@@ -129,4 +129,25 @@ html, body {
 select,
 textarea {
     @apply appearance-none outline-none bg-transparent py-3 xl:py-4 3xl:py-5 border-0 border-b border-orange-500 text-light
+}
+
+/* Brands Slider */
+#brands-slider img {
+	filter: grayscale(100%);
+}
+#brands-slider > div {
+	animation: sliderAnimation 20s linear infinite;
+}
+@media only screen and (max-width: 768px) {
+	#brands-slider > div {
+		animation: sliderAnimation 5s linear infinite;
+	}
+}
+@keyframes sliderAnimation {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }

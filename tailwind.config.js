@@ -47,12 +47,14 @@ module.exports = {
       colors: {
         'dark': '#010101',
         'light': '#F1F1F1',
-        'gray-100': '#D2D2D2',
+        'gray-100': '#E0E0E0',
+        'gray-200': '#D2D2D2',
         'gray-300': '#737373',
         'gray-400': '#646464',
         'gray-500': '#9E9E9E',
         'gray-800': '#131313',
         'orange-500': '#E76F2C',
+        'orange-600': '#C55316',
         'purple-500': '#6F2E8F',
         'purple-600':'#5A2873',
         'vaiolet-500': '#7C1DC9'
