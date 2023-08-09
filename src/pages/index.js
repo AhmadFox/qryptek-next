@@ -10,10 +10,10 @@ export default function Home() {
 
 	return (
 		<Fragment>
-			<Hero  />
-			<OurStory  />
-			<BrandSlider  />
-			<TechHub  />
+			<Hero/>
+			<OurStory/>
+			<BrandSlider/>
+			<TechHub/>
 		</Fragment>
 	)
 }

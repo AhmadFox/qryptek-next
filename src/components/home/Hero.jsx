@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Container from "../ui/Container"
 import Section from "../ui/Section"
 import { Heading } from '../ui/Headings';
-import { Title } from "../ui/Title";
+import { Title } from "../ui/Titles";
 import { Button } from '../ui/Buttons';
 
 const Hero = () => {
@@ -31,7 +31,7 @@ const Hero = () => {
 						<div className="col-span-12 md:col-span-8 xl:pt-52">
 							<Heading variant="h1" className="text-center md:text-start mb-6 sm:mb-0">
 								smart solutions powered by 
-								<Title display='d4' className='mx-3 text-vaiolet-500 inline-block relative before:w-full before:h-[2px] before:bg-vaiolet-500 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:mt-[4px]'> artificial </Title>
+								<Title display='LineThrow'> artificial </Title>
 								<br className='block xl:hidden' /> human intelligence</Heading>
 							<div className="flex items-center md:items-start">
 								<p className="text-center md:text-start md:text-lg xl:text-2xl leading-7 text-gray-200 mb-4 sm:mb-0">Redefining synergies between life science and information technology to advance precision medicine and improve care.</p>
