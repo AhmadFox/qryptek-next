@@ -93,7 +93,7 @@ const TechHub = () => {
 								<div key={index} className="ease-in-out duration-100 overflow-hidden">
 									<div className="cursor-pointer select-none flex gap-x-2 md:gap-x-6 3xl:gap-x-9 items-center sm:items-end" onClick={() => toggleAccordion(index)}>
 										<Count>{`0${ index + 1 }`}</Count>
-										<Title display='services' className={`${ index === activeIndex ? 'text-orange-600 lg:text-orange-500' : 'text-dark' } `}>{service.title}</Title>
+										<Title display='services' className={`${ index === activeIndex ? 'text-orange-600' : 'text-dark' } `}>{service.title}</Title>
 									</div>
 									<div className="ease-in-out duration-300 overflow-hidden pl-6 xl:pl-11 3xl:pl-14" 
 										 style=
