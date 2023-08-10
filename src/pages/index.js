@@ -6,6 +6,7 @@ import OurStory from "@/components/home/OurStory";
 import BrandSlider from "@/components/home/BrandSlider";
 import TechHub from "@/components/home/TechHub";
 import Proccess from "@/components/home/Process";
+import Agility from "@/components/home/Agility";
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
 			<BrandSlider/>
 			<TechHub/>
 			<Proccess/>
+			<Agility/>
 		</Fragment>
 	)
 }
