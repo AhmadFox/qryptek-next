@@ -1,6 +1,10 @@
+export { default as Icon } from "./Icon";
 export { default as Analyiz } from "./Analyiz";
 export { default as Angle } from "./Angle";
+export { default as ArrowLeft } from "./ArrowLeft";
+export { default as ArrowRight } from "./ArrowRight";
 export { default as Arrow } from "./Arrow";
+export { default as CardAngle } from "./CardAngle";
 export { default as Coding } from "./Coding";
 export { default as Design } from "./Design";
 export { default as Impliment } from "./Impliment";
