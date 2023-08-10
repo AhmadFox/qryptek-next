@@ -135,6 +135,7 @@ textarea {
 #brands-slider > div {
 	animation: sliderAnimation 20s linear infinite;
 }
+
 @media only screen and (max-width: 768px) {
 	#brands-slider > div {
 		animation: sliderAnimation 5s linear infinite;
@@ -148,3 +149,17 @@ textarea {
 		transform: translateX(-100%);
 	}
 }
+
+/* Our Works Swiper */
+.works-next-button:disabled,
+.works-prev-button:disabled {
+	@apply opacity-50 select-none pointer-events-none;
+}
+
+/* Card Triangle Background */
+.triangle {
+	background: rgb(251,238,255);
+	background: linear-gradient(172deg, rgba(251,238,255,1) 18%, rgba(255,253,255,1) 57%, rgba(255,255,255,1) 100%);
+	-webkit-clip-path: polygon(100% 0, 0 0, 0 50%);
+	clip-path: polygon(100% 0, 0 0, 0 50%);
+ }

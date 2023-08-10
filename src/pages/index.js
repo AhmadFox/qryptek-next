@@ -7,6 +7,7 @@ import BrandSlider from "@/components/home/BrandSlider";
 import TechHub from "@/components/home/TechHub";
 import Proccess from "@/components/home/Process";
 import Agility from "@/components/home/Agility";
+import OurWork from "@/components/home/OurWorks";
 
 export default function Home() {
 
@@ -18,6 +19,7 @@ export default function Home() {
 			<TechHub/>
 			<Proccess/>
 			<Agility/>
+			<OurWork/>
 		</Fragment>
 	)
 }

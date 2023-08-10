@@ -1,19 +1,19 @@
 import * as React from "react";
-const SvgAngle = (props) => (
+const SvgIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={14.121}
-    height={14.121}
+    width={21}
+    height={19}
+    fill="none"
     {...props}
   >
     <path
-      fill="none"
       stroke="#010101"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
-      d="m1.061 13.061 12-12m0 0H1.984m11.077 0v10.667"
+      d="m1.126 9.778 18.741-.056m0 0-8.35-8.62m8.35 8.62-8.618 8.35"
     />
   </svg>
 );
-export default SvgAngle;
+export default SvgIcon;
