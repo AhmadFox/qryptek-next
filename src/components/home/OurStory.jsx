@@ -5,8 +5,8 @@ import Image from 'next/image';
 import React from 'react'
 import Section from '../ui/Section'
 import Container from '../ui/Container'
-import { Heading } from '../ui/Headings';
 import { Button } from '../ui/Buttons';
+import { Title } from '../ui/Titles';
 
 const OurStory = () => {
   return (
@@ -36,7 +36,7 @@ const OurStory = () => {
 			/>
 			<div className="grid 2xl:absolute bottom-20 grid-cols-12 md:-translate-y-24 md:-mb-24 2xl:mb-0 2xl:-translate-y-0">
 				<div className="md:col-start-2 xl:col-start-6 col-span-12 md:col-span-10 xl:col-span-6 grid gap-y-4">
-					<Heading variant='h1' className='text-center md:text-start'>our story</Heading>
+					<Title type='h2' display='d1' className='text-center md:text-start'>our story</Title>
 					<p className="xl:text-lg mb-3 xl:mb-7 text-center md:text-start pr-4 md:pr-0">Qryptek is a premier digital health company offering custom-built software solutions and IT infrastructure services to healthcare startups and life sciences organizations worldwide. Fostering innovation and digital transformation, we design and develop secure and regulatory-compliant software that combines cutting-edge technologies with the latest medical advancements.</p>
 					<div className="text-center md:text-start">
 						<Button effect="true" rounded="true" outline="true" href="/about">explore all</Button>

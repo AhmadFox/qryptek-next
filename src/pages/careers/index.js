@@ -1,14 +1,14 @@
 // Import Styled Components UI:
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
-import { Heading } from "@/components/ui/Headings";
+import { Title } from "@/components/ui/Titles";
 
 const Careers = () => {
 
 	return (
 		<Section>
 			<Container>
-				<Heading variant="h1">Careers Page</Heading>
+				<Title type="h1" display="d2">Careers Page</Title>
 			</Container>
 		</Section>
 	)

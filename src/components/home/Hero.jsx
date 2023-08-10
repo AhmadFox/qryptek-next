@@ -4,7 +4,6 @@ import Image from 'next/image';
 // Import Styled Components:
 import Container from "../ui/Container"
 import Section from "../ui/Section"
-import { Heading } from '../ui/Headings';
 import { Title } from "../ui/Titles";
 import { Button } from '../ui/Buttons';
 
@@ -29,10 +28,10 @@ const Hero = () => {
 
 						{/* Beginning Heading Text */}
 						<div className="col-span-12 md:col-span-8 xl:pt-52">
-							<Heading variant="h1" className="text-center md:text-start mb-6 sm:mb-0">
+							<Title type="h1" display='d1' className="text-center md:text-start mb-6 sm:mb-0">
 								smart solutions powered by 
-								<Title display='LineThrow'> artificial </Title>
-								<br className='block xl:hidden' /> human intelligence</Heading>
+								<Title type='span' display='d4' variant='LineThrow'> artificial </Title>
+								<br className='block xl:hidden' /> human intelligence</Title>
 								<div className="flex items-center md:items-start">
 									<p className="text-center md:text-start md:text-lg xl:text-xl 3xl:text-[22px] leading-7 text-gray-200 mb-4 sm:mb-0">Redefining synergies between life science and information technology to advance precision medicine and improve care.</p>
 									<Button fill={'true'} rounded={'true'} className={'flex md:shrink-0 flex-col justify-center items-center p-3 xl:p-5 w-24 sm:w-32 md:w-36 xl:w-44 h-24 sm:h-32 md:h-36 xl:h-44 xl:translate-x-20 translate-y-32  md:translate-y-20 xl:-translate-y-5 3xl:-translate-y-7 !absolute md:!relative  right-6 sm:right-20 mx-auto'}>
