@@ -1,8 +1,7 @@
 // Import Styled Components:
 import Section from "../ui/Section";
 import Container from "../ui/Container";
-import { Heading } from "../ui/Headings";
-import { SubTitle } from "../ui/Titles";
+import { Title, SubTitle } from "../ui/Titles";
 
 // Import Icons:
 import { Arrow } from "../icons";
@@ -41,9 +40,9 @@ const Proccess = () => {
     <Section variant="page-block" className="sm:px-6 lg:px-0">
       <Container className="grid gap-y-20 md:gap-y-24 3xl:gap-y-32">
         <div className="3xl:w-10/12 grid gap-y-6">
-          <Heading variant="h1" className="text-center lg:text-start">
+          <Title type="h1" display="d1" className="text-center lg:text-start">
             Smart Process to meet your goals
-          </Heading>
+          </Title>
           <SubTitle variant="v2">
             We&apos;ve spent many years in the healthcare industry and recognize
             the challenges and complexities customers face to ensure that
@@ -68,7 +67,7 @@ const Proccess = () => {
                 <div className="w-[88px] h-[88px] bg-white rounded-full p-5 mx-auto md:ml-0 mb-3 xl:mb-5 flex justify-center items-center">
                   {getIconComponentByName(step.icon)}
                 </div>
-                <Heading variant="h6" className="text-center md:text-start sm:!text-base 3xl:!text-lg">{step.name}</Heading>
+                <Title type="h2" display="d6" className="text-center md:text-start sm:!text-base 3xl:!text-lg">{step.name}</Title>
                 <SubTitle variant="v2" className="sm:text-sm md:text-base">{step.details}</SubTitle>
               </div>
             </div>
@@ -76,12 +75,13 @@ const Proccess = () => {
         </div>
 
         <div className="grid sm:grid-cols-12 gap-y-4">
-          <Heading
-            variant="h4"
+          <Title
+            type="h3"
+            display="d4"
             className="sm:col-span-6 md:col-span-5 lg:col-span-4 xl:col-span-3 2xl:col-span-3"
           >
             Software Development & Beyond
-          </Heading>
+          </Title>
           <SubTitle
             variant="v2"
             className="sm:col-span-12 xl:col-span-8 2xl:col-start-5 2xl:col-span-8 !text-start"
