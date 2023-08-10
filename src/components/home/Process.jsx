@@ -39,17 +39,17 @@ const Proccess = () => {
   return (
     <Section variant="page-block" className="sm:px-6 lg:px-0">
       <Container className="grid gap-y-20 md:gap-y-24 3xl:gap-y-32">
-        <div className="3xl:w-10/12 grid gap-y-6">
+        <div className="2xl:w-10/12 grid gap-y-6">
           <Title type="h1" display="d1" className="text-center lg:text-start">
             Smart Process to meet your goals
           </Title>
-          <SubTitle variant="v2">
+          <SubTitle variant="v2" className='text-gray-200'>
             We&apos;ve spent many years in the healthcare industry and recognize
             the challenges and complexities customers face to ensure that
             biotechnology products meet all the quality attributes required by
             regulatory agencies.
           </SubTitle>
-          <SubTitle variant="v2">
+          <SubTitle variant="v2" className='text-gray-200'>
             We want to keep you abreast with the evolving changes through
             tailor-made, secure, and scalable technology solutions to enhance
             your business outcomes and generate the data intelligence needed to
@@ -68,7 +68,7 @@ const Proccess = () => {
                   {getIconComponentByName(step.icon)}
                 </div>
                 <Title type="h2" display="d6" className="text-center md:text-start sm:!text-base 3xl:!text-lg">{step.name}</Title>
-                <SubTitle variant="v2" className="sm:text-sm md:text-base">{step.details}</SubTitle>
+                <SubTitle variant="v2" className="text-gray-200 sm:text-sm md:text-base">{step.details}</SubTitle>
               </div>
             </div>
           ))}
@@ -84,7 +84,7 @@ const Proccess = () => {
           </Title>
           <SubTitle
             variant="v2"
-            className="sm:col-span-12 xl:col-span-8 2xl:col-start-5 2xl:col-span-8 !text-start"
+            className="text-gray-200 sm:col-span-12 xl:col-span-8 2xl:col-start-5 2xl:col-span-8 !text-start"
           >
             We’re on a mission to facilitate and accelerate clients’ growth and
             success. Our passionate team become a part of your team, empowering

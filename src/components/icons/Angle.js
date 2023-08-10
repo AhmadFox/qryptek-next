@@ -8,7 +8,7 @@ const SvgAngle = (props) => (
   >
     <path
       fill="none"
-      stroke="#010101"
+      stroke=""
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}
