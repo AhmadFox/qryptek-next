@@ -63,7 +63,7 @@ const OurWorks = () => {
 			<Container>
 
 				<div className="grid gap-y-3 mb-8 md:mb-12 xl:mb-14 3xl:mb-16">
-					<Title type="h4" display="d4" className="text-center lg:text-start text-dark">
+					<Title type="h2" display="d4" className="text-center lg:text-start text-dark">
 						Some of Our Work
 					</Title>
 					
@@ -107,7 +107,6 @@ const OurWorks = () => {
 						},
 					}}
 					modules={[Navigation]}
-					cssMode={true}
 					navigation={true}
 					className="works-swiper"
 					{...params}
