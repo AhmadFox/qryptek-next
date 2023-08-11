@@ -152,7 +152,9 @@ textarea {
 
 /* Styling Swiper */
 .works-swiper-next-button:disabled,
-.works-swiper-prev-button:disabled {
+.works-swiper-prev-button:disabled,
+.team-swiper-next-button:disabled,
+.team-swiper-prev-button:disabled {
 	@apply opacity-50 select-none pointer-events-none;
 }
 
