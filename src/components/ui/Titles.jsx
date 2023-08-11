@@ -7,6 +7,8 @@ const displays = {
   d4: tw`font-secondary text-xl md:text-2xl 2xl:text-3xl 3xl:text-4xl leading-[1.2]`,
   d5: tw`font-secondary text-3xl`,
   d6: tw`font-secondary text-2xl`,
+  d7: tw`font-secondary text-xl`,
+  d8: tw`font-secondary text-base sm:text-lg`,
 };
 
 const customTitles = {

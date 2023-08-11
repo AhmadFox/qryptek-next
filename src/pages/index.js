@@ -8,18 +8,20 @@ import TechHub from "@/components/home/TechHub";
 import Proccess from "@/components/home/Process";
 import Agility from "@/components/home/Agility";
 import OurWork from "@/components/home/OurWorks";
+import Team from "@/components/home/Team";
 
 export default function Home() {
 
 	return (
 		<Fragment>
-			<Hero/>
-			<OurStory/>
-			<BrandSlider/>
-			<TechHub/>
-			<Proccess/>
-			<Agility/>
-			<OurWork/>
+			<Hero />
+			<OurStory />
+			<BrandSlider />
+			<TechHub />
+			<Proccess />
+			<Agility />
+			<OurWork />
+			<Team />
 		</Fragment>
 	)
 }

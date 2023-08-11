@@ -150,13 +150,21 @@ textarea {
 	}
 }
 
-/* Our Works Swiper */
+/* Styling Swiper */
+.works-swiper-next-button:disabled,
+.works-swiper-prev-button:disabled {
+	@apply opacity-50 select-none pointer-events-none;
+}
+
+.swiper-pagination {
+	@apply !static mt-8 md:hidden
+}
+.swiper-pagination-bullet {
+	@apply !bg-orange-500 !w-3 !h-3
+}
+
 .works-swiper {
 	overflow: visible !important;
-}
-.works-next-button:disabled,
-.works-prev-button:disabled {
-	@apply opacity-50 select-none pointer-events-none;
 }
 
 /* Card Triangle Background */
@@ -165,4 +173,12 @@ textarea {
 	background: linear-gradient(172deg, rgba(251,238,255,1) 18%, rgba(255,253,255,1) 57%, rgba(255,255,255,1) 100%);
 	-webkit-clip-path: polygon(100% 0, 0 0, 0 50%);
 	clip-path: polygon(100% 0, 0 0, 0 50%);
- }
+}
+
+.data-svg:after {
+	content: 'Interactive Discovery & Collaboration'
+}
+
+.diamond-text {
+	fill: green;
+}
