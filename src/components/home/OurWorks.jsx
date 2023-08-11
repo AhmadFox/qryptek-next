@@ -1,5 +1,3 @@
-import React, { useRef, useState } from 'react';
-
 // Import Packeges:
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,14 +10,15 @@ import { Title, SubTitle } from "../ui/Titles";
 import { ButtonLink, Button } from '../ui/Buttons';
 
 // Import Svg Icons
-import { ArrowLeft, ArrowRight, CardAngle } from '../icons';
+import { ArrowLeft, ArrowRight } from '../icons';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-// import required modules
-import { Navigation } from 'swiper/modules';
+// import Required Swiper Modules
+import { Navigation, Pagination } from 'swiper/modules';
 
 
 const ourWorks = [
@@ -42,8 +41,8 @@ const OurWorks = () => {
 	const params = {
 		spaceBetween: 20,
 		navigation: {
-			prevEl: '.works-prev-button',
-			nextEl: '.works-next-button',
+			prevEl: '.works-swiper-prev-button',
+			nextEl: '.works-swiper-next-button',
 		},
 	};
 
@@ -77,11 +76,11 @@ const OurWorks = () => {
 
 						{/* Navegation Swiper Buttons */}
 						<div className="flex gap-x-4 2xl:gap-x-9">
-							<Button outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center works-prev-button group">
+							<Button outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center works-swiper-prev-button group">
 								<ArrowLeft className='group-hover:fill-light ease-in-out duration-300' />
 								<span className="sr-only">Subscribe Newsletter Button</span>
 							</Button>
-							<Button outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center works-next-button group">
+							<Button outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center works-swiper-next-button group">
 								<ArrowRight className='group-hover:fill-light ease-in-out duration-300' />
 								<span className="sr-only">Subscribe Newsletter Button</span>
 							</Button>
@@ -106,8 +105,9 @@ const OurWorks = () => {
 							spaceBetween: 40,
 						},
 					}}
-					modules={[Navigation]}
+					modules={[Navigation, Pagination]}
 					navigation={true}
+					pagination={true}
 					className="works-swiper"
 					{...params}
 				>
@@ -135,7 +135,6 @@ const OurWorks = () => {
 						</SwiperSlide>
 					))}
 				</Swiper>
-
 			</Container>
 
 		</Section>
