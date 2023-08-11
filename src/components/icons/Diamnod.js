@@ -98,8 +98,8 @@ const Diamnod = (props) => {
             y2="132"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#564CCD" />
-            <stop offset="1" stop-color="#06B0D5" />
+            <stop stopColor="#564CCD" />
+            <stop offset="1" stopColor="#06B0D5" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_300_270"
@@ -109,8 +109,8 @@ const Diamnod = (props) => {
             y2="101.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_300_270"
@@ -120,8 +120,8 @@ const Diamnod = (props) => {
             y2="99"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#564CCD" />
-            <stop offset="1" stop-color="#06B0D5" />
+            <stop stopColor="#564CCD" />
+            <stop offset="1" stopColor="#06B0D5" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_300_270"
@@ -131,8 +131,8 @@ const Diamnod = (props) => {
             y2="60.2506"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_300_270"
@@ -142,8 +142,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_300_270"
@@ -153,8 +153,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_300_270"
@@ -164,8 +164,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint7_linear_300_270"
@@ -175,8 +175,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint8_linear_300_270"
@@ -186,8 +186,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint9_linear_300_270"
@@ -197,8 +197,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint10_linear_300_270"
@@ -208,8 +208,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint11_linear_300_270"
@@ -219,8 +219,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint12_linear_300_270"
@@ -230,8 +230,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint13_linear_300_270"
@@ -241,8 +241,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint14_linear_300_270"
@@ -252,8 +252,8 @@ const Diamnod = (props) => {
             y2="548.063"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint15_linear_300_270"
@@ -263,8 +263,8 @@ const Diamnod = (props) => {
             y2="447"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#06B0D5" />
-            <stop offset="1" stop-color="#564CCD" />
+            <stop stopColor="#06B0D5" />
+            <stop offset="1" stopColor="#564CCD" />
           </linearGradient>
           <linearGradient
             id="paint16_linear_300_270"
@@ -274,8 +274,8 @@ const Diamnod = (props) => {
             y2="453.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
           <linearGradient
             id="paint17_linear_300_270"
@@ -285,8 +285,8 @@ const Diamnod = (props) => {
             y2="392"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#564CCD" />
-            <stop offset="1" stop-color="#06B0D5" />
+            <stop stopColor="#564CCD" />
+            <stop offset="1" stopColor="#06B0D5" />
           </linearGradient>
           <linearGradient
             id="paint18_linear_300_270"
@@ -296,8 +296,8 @@ const Diamnod = (props) => {
             y2="380.251"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#00B7D5" />
-            <stop offset="1" stop-color="#7C1DC9" />
+            <stop stopColor="#00B7D5" />
+            <stop offset="1" stopColor="#7C1DC9" />
           </linearGradient>
         </defs>
       </svg>

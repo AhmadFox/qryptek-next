@@ -3,9 +3,12 @@ import { useState, useEffect } from 'react';
 // Import Packeges:
 import Image from 'next/image';
 
+// Import Contexts:
+import { useRequsetModal } from '@/context/RequsetModalContext';
+
 // Import Styled Components:
 import Container from '@/components/ui/Container';
-import { ButtonMenu, ButtonLink } from '@/components/ui/Buttons';
+import { ButtonMenu, Button } from '@/components/ui/Buttons';
 import { NavLink } from '@/components/ui/NavLink';
 import { NavMenu } from './NavMenu';
 import { Nav, NavFlex, BluredBg } from './styled';
@@ -23,6 +26,8 @@ const Navbar = () => {
 
 	const [ openMenu, setOpenMenu ] = useState(false);
 	const [ bluredNav, setBluredNav] = useState(false);
+
+	const { openRequsetModal } = useRequsetModal();
 
 	const handlerOpenMenu = () => {
 		setOpenMenu(!openMenu);
@@ -65,7 +70,7 @@ const Navbar = () => {
 					<NavMenu items={ItemsList} isOpen={openMenu} setCloseMenu={setOpenMenu}>
 						<NavFlex>
 							<NavLink href="tel:7089646855" className='md:mr-6 xl:mr-9 hidden md:block relative md:z-[4] lg:z-1'>708.964.6855</NavLink>
-							<ButtonLink href="/contact" rounded="true" outline="true" effect="true" className='hidden md:block md:z-[4] lg:z-1'>contact us</ButtonLink>
+							<Button onClick={openRequsetModal} href="/contact" rounded="true" outline="true" effect="true" className='hidden md:block md:z-[4] lg:z-1'>contact us</Button>
 							<ButtonMenu isOpen={openMenu} className="ml-5" onClick={handlerOpenMenu} />
 						</NavFlex>
 					</NavMenu>

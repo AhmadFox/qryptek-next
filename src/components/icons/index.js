@@ -5,6 +5,7 @@ export { default as ArrowLeft } from "./ArrowLeft";
 export { default as ArrowRight } from "./ArrowRight";
 export { default as Arrow } from "./Arrow";
 export { default as CardAngle } from "./CardAngle";
+export { default as Close } from "./Close";
 export { default as Coding } from "./Coding";
 export { default as Design } from "./Design";
 export { default as Impliment } from "./Impliment";

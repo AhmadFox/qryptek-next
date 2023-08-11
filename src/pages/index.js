@@ -9,6 +9,7 @@ import Proccess from "@/components/home/Process";
 import Agility from "@/components/home/Agility";
 import OurWork from "@/components/home/OurWorks";
 import Team from "@/components/home/Team";
+import Contact from "@/components/home/Contact";
 
 export default function Home() {
 
@@ -22,6 +23,7 @@ export default function Home() {
 			<Agility />
 			<OurWork />
 			<Team />
+			<Contact />
 		</Fragment>
 	)
 }
