@@ -162,7 +162,7 @@ textarea {
 	@apply !static mt-8 md:hidden
 }
 .swiper-pagination-bullet {
-	@apply !bg-orange-500 !w-3 !h-3
+	@apply !bg-orange-500 !w-2 xl:!w-3 !h-2 xl:!h-3
 }
 
 .works-swiper {
