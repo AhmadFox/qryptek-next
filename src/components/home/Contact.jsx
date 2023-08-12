@@ -20,7 +20,7 @@ const Contact = () => {
 			<div className="w-full h-auto absolute xl:relative inset-0">
 				<Image
 					className='!static object-cover'
-					src="/city_night.jpg"
+					src="/city_night.png"
 					alt="Checago City Night"
 					fill
 					quality={100}
