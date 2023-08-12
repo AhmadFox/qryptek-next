@@ -184,3 +184,45 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
 	@apply after:opacity-100
 }
+
+.jump-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	cursor: pointer;
+  }
+  
+  .progress-bar {
+	height: 40px;
+	width: 40px;
+	position: relative;
+	margin-top: 5px;
+  }
+  
+  .progress-circle {
+	width: 100%;
+	height: 100%;
+	border: 4px solid transparent;
+	border-top-color: #007bff;
+	border-radius: 50%;
+	position: absolute;
+	animation: spin 1s linear infinite, fill-progress 2s ease-out forwards;
+	transform-origin: center center;
+  }
+  
+  @keyframes spin {
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  @keyframes fill-progress {
+	to {
+	  transform: rotate(calc(var(--progress) * 3.6deg));
+	}
+  }

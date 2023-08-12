@@ -37,7 +37,7 @@ const processSteps = [
 
 const Proccess = () => {
   return (
-    <Section variant="page-block" className="sm:px-6 lg:px-0">
+    <Section variant="xl" className="sm:px-6 lg:px-0">
       <Container className="grid gap-y-20 md:gap-y-24 3xl:gap-y-32">
         <div className="2xl:w-10/12 grid gap-y-6">
           <Title type="h1" display="d1" className="text-center lg:text-start">

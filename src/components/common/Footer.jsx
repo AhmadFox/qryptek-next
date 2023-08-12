@@ -28,9 +28,9 @@ const Footer = () => {
 
 	return (
         <footer>
-			<Section>
+			<Section >
 				<Container>
-					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 3xl:gap-16 justify-center sm:justify-start mb-8 md:mb-12 xl:mb-20">
+					<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 3xl:gap-16 justify-stretch sm:justify-start mb-8 md:mb-12 xl:mb-20">
 						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 sm:col-span-1">
 							<Title type='p' display="d4" variant='footer'>Quick Links</Title>
 							<ul className="grid justify-center sm:justify-start md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-3">
@@ -48,7 +48,7 @@ const Footer = () => {
 								<NavLink href="mailto:clientServices@qryptek.com" className="text-center sm:text-start">ClientServices@qryptek.com</NavLink>
 							</div>
 						</div>
-						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 md:col-span-1">
+						<div className="grid justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 md:col-span-1">
 							<Title type='p' display="d4" variant='footer'>Receive news</Title>
 							<form onSubmit={handleSubmit(onSubmit)} className="relative">
 								<Controller
@@ -93,9 +93,3 @@ const Footer = () => {
 }
 
 export default Footer;
-
-// <Input className={`pr-12 ${errors && errors.email && '!border-red-400'}`} type="email" id="email" placeholder='Enter your email' {...register("email", {required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i})} />
-// <span className='text-red-400 block capitalize text-sm absolute -bottom-6 lg:-bottom-2 xl:-bottom-8'>
-// 	{errors && errors.email && errors.email.type === "required" && 'email is required'}
-// 	{errors && errors.email && errors.email.type === "pattern" && 'Please write correct email address'}
-// </span>

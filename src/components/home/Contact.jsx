@@ -15,7 +15,7 @@ const Contact = () => {
 	const { openRequsetModal } = useRequsetModal();
 
 	return (
-		<Section variant='page-block' className='relative'>
+		<Section variant='xl' className='relative xl:!py-0'>
 
 			<div className="w-full h-auto absolute xl:relative inset-0">
 				<Image

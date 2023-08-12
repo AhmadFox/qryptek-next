@@ -15,7 +15,25 @@ const Office = () => {
 	const { openRequsetModal } = useRequsetModal();
 
 	return (
-		<Section variant='page-block' className='relative'>
+		<Section variant='2xl' className='relative'>
+			<div className="w-1/2 3xl:w-max max-w-max h-auto absolute top-0 right-2 opacity-40 xl:opacity-100">
+				<Image
+				className="!static"
+				src="/spheers_logo_small.svg"
+				alt="Spheers Gradiant Left"
+				fill
+				sizes="(max-width: 768px)100vw, 100vw"
+				/>
+			</div>
+			<div className="w-1/2 3xl:w-max max-w-max h-auto absolute bottom-0 left-0">
+				<Image
+					className='!static'
+					src="/spheers_gradiant_bottom.svg"
+					alt="Spheers Gradiant Bottom"
+					fill
+					sizes="(max-width: 768px)100vw, 100vw"
+				/>
+			</div>
 			<Container>
 				<div className="relative">
 					<Image

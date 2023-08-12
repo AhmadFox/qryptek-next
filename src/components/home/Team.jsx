@@ -62,7 +62,7 @@ const Team = () => {
 	};
 
 	return (
-		<Section variant='page-block' className='relative'>
+		<Section variant='2xl' className='relative'>
 
 			<div className="w-full h-auto absolute bottom-0 left-0">
 				<Image

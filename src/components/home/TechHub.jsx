@@ -48,7 +48,7 @@ const TechHub = () => {
 	};
 
 	return (
-		<Section variant='page-block' className="bg-white relative">
+		<Section variant='xl' className="bg-white relative">
 			<div className="w-full lg:w-5/12 3xl:w-[44%] h-auto absolute top-0 left-0">
 				<Image
 					className='!static'
