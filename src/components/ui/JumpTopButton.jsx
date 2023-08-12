@@ -31,7 +31,7 @@ const JumpToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed z-[4] w-12 h-12 flex justify-center items-center bottom-0 bg-dark right-10 rounded-full cursor-pointer elae-in-out duration-300 opacity-0 group
+      className={`fixed z-[4] w-12 h-12 flex justify-center items-center bottom-0 bg-dark left:5 md:left-10 rounded-full cursor-pointer elae-in-out duration-300 opacity-0 group
         ${showButton ? 'opacity-100 bottom-10' : 'opacity-0 bottom-0'}
       `}
     >
