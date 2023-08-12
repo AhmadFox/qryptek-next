@@ -3,8 +3,8 @@ const SvgDesign = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={38} height={48} {...props}>
     <defs>
       <linearGradient id="design_svg__a" x1="0%" x2="100%" y1="0%" y2="0%">
-        <stop offset="0%" />
-        <stop offset="100%" />
+        <stop offset="0%" stopColor="#7C1DC9" stopOpacity="1" />
+        <stop offset="100%" stopColor="#00B7D5" stopOpacity="1" />
       </linearGradient>
     </defs>
     <path

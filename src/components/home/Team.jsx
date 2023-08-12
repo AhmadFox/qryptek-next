@@ -78,6 +78,18 @@ const Team = () => {
 
 			<Container className='relative z-[1]'>
 
+				<div className="xl:w-1/3 3xl:w-max max-w-max h-auto absolute top-48 md:top-24 2xl:top-40 right-0 z-[-1]">
+					<Image
+						className='!static'
+						src="/spheers_logo_full.svg"
+						alt="Spheers Gradiant Bottom"
+						fill
+						quality={100}
+						priority
+						sizes="(max-width: 768px)100vw, 100vw"
+					/>
+				</div>
+
 				<div className="grid gap-y-3 mb-8 md:mb-12 xl:mb-14 3xl:mb-16 2xl:w-3/4">
 					<Title type="h1" display="d1" className="text-center lg:text-start">
 						Highlight of Our Team Composition
