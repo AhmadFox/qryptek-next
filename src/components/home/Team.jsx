@@ -71,6 +71,7 @@ const Team = () => {
 					alt="Spheers Gradiant Bottom"
 					fill
 					quality={100}
+					priority
 					sizes="(max-width: 768px)100vw, 100vw"
 				/>
 			</div>

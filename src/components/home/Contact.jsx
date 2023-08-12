@@ -17,7 +17,7 @@ const Contact = () => {
 	return (
 		<Section variant='page-block' className='relative'>
 
-			<div className="w-full h-auto absolute xl:static inset-0">
+			<div className="w-full h-auto absolute xl:relative inset-0">
 				<Image
 					className='!static object-cover'
 					src="/city_night.jpg"

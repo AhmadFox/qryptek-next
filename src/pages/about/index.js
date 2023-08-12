@@ -2,6 +2,7 @@
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import { Title } from "@/components/ui/Titles";
+import Checkbox from "@/components/ui/form/CheckBox";
 
 const About = () => {
 	

@@ -47,10 +47,10 @@ export default function Modal() {
 								leaveFrom="opacity-100 translate-y-0 sm:scale-100"
 								leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
 							>
-								<Dialog.Panel className="relative transform overflow-hidden rounded-md bg-dark transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+								<Dialog.Panel className="relative transform overflow-hidden rounded-md bg-slate-900 transition-all sm:my-8 w-full sm:max-w-2xl">
 
-									<div className="flex justify-between items-start px-5 py-4">
-										<Title type='p' display='d6'>
+									<div className="flex justify-between items-center py-5 px-4">
+										<Title type='p' display='d6' className='!text-base md:!text-2xl'>
 											{isRequsetModalOpen && 'Requset Project'}
 										</Title>
 										<button onClick={closeRequsetModal} className='outline-none stroke-light hover:stroke-orange-500 ease-in-out duration-300'>
