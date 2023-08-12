@@ -1,10 +1,10 @@
 // Import Packeges:
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 
 // Import Styled Components:
 import Container from "../ui/Container";
 import Section from "../ui/Section";
-import Input from "../ui/Input";
+import Input from "../ui/form/Input";
 import { Title } from "../ui/Titles";
 import { Button } from "../ui/Buttons";
 import { NavLink } from '@/components/ui/NavLink';
@@ -20,11 +20,11 @@ const quickLinks = [
 
 const Footer = () => {
 
-	const { register, handleSubmit, watch, formState: {errors}} = useForm();
+	const { handleSubmit, control, formState: { errors } } = useForm();
+
 	const onSubmit = (data) => {
 		console.log(JSON.stringify(data));
-		console.log(watch(data));
-	}
+	};
 
 	return (
         <footer>
@@ -51,13 +51,29 @@ const Footer = () => {
 						<div className="grid justify-center sm:justify-stretch gap-y-6 md:gap-4 xl:gap-y-5 col-span-2 md:col-span-1">
 							<Title type='p' display="d4" variant='footer'>Receive news</Title>
 							<form onSubmit={handleSubmit(onSubmit)} className="relative">
-								<div className="">
-									<Input className={`pr-12 ${errors && errors.email && '!border-red-400'}`} type="email" id="email" placeholder='Enter your email' {...register("email", {required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i})} />
-									<span className='text-red-400 block capitalize text-sm absolute -bottom-6 lg:-bottom-2 xl:-bottom-8'>
-										{errors && errors.email && errors.email.type === "required" && 'email is required'}
-										{errors && errors.email && errors.email.type === "pattern" && 'Please write correct email address'}
-									</span>
-								</div>
+								<Controller
+									name="email"
+									control={control}
+									rules={{
+										required: true,
+										pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+									}}
+									render={({ field }) => (
+										<Input 
+											type='email'
+											name='email'
+											required={true}
+											placeholder="Email Address"
+											hasError={errors.email ? true : false}
+											msgError={
+												errors && errors.email && errors.email.type === "required" ? 'email is required': 'Please write correct email address'
+											}
+											id='email'
+											className='col-span-2 sm:col-span-1'
+											field={field}
+										/>
+									)}
+								/>
 
 								<Button type="submit" outline="true" rounded="true" className="!p-0 w-10 h-10 flex justify-center items-center stroke-light hover:stroke-dark !absolute top-0 xl:top-2 right-0">
 									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} className="w-5 h-5">
@@ -77,3 +93,9 @@ const Footer = () => {
 }
 
 export default Footer;
+
+// <Input className={`pr-12 ${errors && errors.email && '!border-red-400'}`} type="email" id="email" placeholder='Enter your email' {...register("email", {required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i})} />
+// <span className='text-red-400 block capitalize text-sm absolute -bottom-6 lg:-bottom-2 xl:-bottom-8'>
+// 	{errors && errors.email && errors.email.type === "required" && 'email is required'}
+// 	{errors && errors.email && errors.email.type === "pattern" && 'Please write correct email address'}
+// </span>

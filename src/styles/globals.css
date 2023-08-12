@@ -177,10 +177,10 @@ textarea {
 	clip-path: polygon(100% 0, 0 0, 0 50%);
 }
 
-.data-svg:after {
-	content: 'Interactive Discovery & Collaboration'
+input[type=checkbox] + label {
+	@apply after:content-['✓'] after:text-light after:absolute after:text-lg after:left-1.5 after:opacity-0 after:ease-in-out after:duration-100
 }
 
-.diamond-text {
-	fill: green;
+input[type=checkbox]:checked + label {
+	@apply after:opacity-100
 }
