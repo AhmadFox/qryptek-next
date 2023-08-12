@@ -9,13 +9,14 @@ import Container from "../ui/Container"
 import Section from "../ui/Section"
 import { Title } from "../ui/Titles";
 import { Button } from '../ui/Buttons';
+import Header from '../ui/Header';
 
-const Hero = () => {
+const HomeHeader = () => {
 
 	const { openRequsetModal } = useRequsetModal();
 
 	return (
-		<header className='md:h-screen md:max-h-[928px] lg:max-h-[1200px] overflow-hidden relative'>
+		<Header type='hero'>
 			<div className="h-full w-full absolute z-[-1]">
 				<Image
 					className="absolute top-0 right-0 object-cover"
@@ -66,8 +67,9 @@ const Hero = () => {
 				
 				</Container>
 			</Section>
-		</header>
+		</Header>
+
 	)
 }
 
-export default Hero
+export default HomeHeader
