@@ -47,7 +47,7 @@ const OurWorks = () => {
 	};
 
 	return (
-		<Section variant='page-block' className='bg-white relative overflow-hidden 2xl:!pt-0 3xl:!pt-20'>
+		<Section variant='xl' className='bg-white relative overflow-hidden 2xl:!pt-0 3xl:!pt-20'>
 
 			<div className="w-full 3xl:w-max max-w-max h-auto absolute bottom-0 left-0">
 				<Image
@@ -72,7 +72,7 @@ const OurWorks = () => {
 
 					<div className="mt-4 flex justify-between">
 
-						<ButtonLink href='/our-works' effect='true' rounded='true' outline='true' className='text-dark hover:!text-light'>explore all</ButtonLink>
+						<ButtonLink href='/core-values' effect='true' rounded='true' outline='true' className='text-dark hover:!text-light'>explore all</ButtonLink>
 
 						{/* Navegation Swiper Buttons */}
 						<div className="flex gap-x-4 2xl:gap-x-9">

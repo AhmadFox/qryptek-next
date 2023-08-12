@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/common/navbar/Navbar';
 import Footer from '@/components/common/Footer';
+import JumpToTopButton from '@/components/ui/JumpTopButton';
 
 const Layout = ({ children }) => {
 	return (
@@ -19,6 +20,8 @@ const Layout = ({ children }) => {
 			<Navbar  />
 
 			<main>{children}</main>
+
+			<JumpToTopButton  />
 			
 			<Footer  />
 

@@ -33,7 +33,7 @@ const agilityList = [
 
 const Agility = () => {
   return (
-    <Section variant="page-block" className="bg-white relative 2xl:!pb-12 3xl:!pb-20">
+    <Section variant="xl" className="bg-white relative 2xl:!pb-12 3xl:!pb-20">
       <div className="w-full 3xl:w-max max-w-max h-auto absolute top-0 right-4 opacity-40 xl:opacity-100">
         <Image
           className="!static"
