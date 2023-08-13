@@ -3,9 +3,6 @@ import { useState, useEffect } from 'react';
 // Import Packeges:
 import Image from 'next/image';
 
-// Import Contexts:
-import { useRequsetModal } from '@/context/RequsetModalContext';
-
 // Import Styled Components:
 import Container from '@/components/ui/Container';
 import { ButtonMenu, ButtonLink } from '@/components/ui/Buttons';
@@ -26,8 +23,6 @@ const Navbar = () => {
 
 	const [ openMenu, setOpenMenu ] = useState(false);
 	const [ bluredNav, setBluredNav] = useState(false);
-
-	const { openRequsetModal } = useRequsetModal();
 
 	const handlerOpenMenu = () => {
 		setOpenMenu(!openMenu);
