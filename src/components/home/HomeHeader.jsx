@@ -17,10 +17,10 @@ const HomeHeader = () => {
 
 	return (
 		<Header type='hero'>
-			<div className="h-full w-full absolute z-[-1]">
+			<div className="h-full w-full absolute -translate-y-24 z-[-1]">
 				<Image
 					className="absolute top-0 right-0 object-cover"
-					src="/bg_home_age_header.jpg"
+					src="/bg_home_header.jpg"
 					alt="Header Matrix Parten Background"
 					quality={100}
 					fill
@@ -31,11 +31,11 @@ const HomeHeader = () => {
 			<Section variant="hero-block" className="h-full">
 				<Container className="h-full flex items-center">
 				
-					<div className="grid grid-cols-12 gap-6 items-center">
+					<div className="grid grid-cols-12 gap-6 items-center xl:translate-y-10">
 
 						{/* Beginning Heading Text */}
 						<div className="col-span-12 md:col-span-8 xl:pt-52">
-							<Title type="h1" display='d1' className="text-center md:text-start mb-6 sm:mb-0">
+							<Title type="h1" display='d1' className="text-center md:text-start mb-6 sm:mb-0 leading-[1.55]">
 								smart solutions powered by 
 								<Title type='span' display='d4' variant='LineThrow'> artificial </Title>
 								<br className='block xl:hidden' /> human intelligence</Title>
@@ -51,17 +51,21 @@ const HomeHeader = () => {
 						</div>
 
 						{/* Beginning Cube Block Banner */}
-						<div className="col-span-12 md:col-span-4 2xl:pr-12 2xl:pl-4 order-1">
+						<div className="col-span-12 md:col-span-4 2xl:pr-12 2xl:pl-4 order-1 xl:-translate-x-2">
+						<div className="relative w-2/3 md:w-full pb-10/12 md:pb-full mt-1">
 							<Image
-								className="w-2/3 md:w-full h-auto mt-1"
 								src="/cube_block.png"
 								alt="Cubes Block Banner"
-								width={474}
-								height={450}
-								quality={100}
 								ayout="responsive"
+								placeholder="blur"
+								blurDataURL="/cube_block_blured.png"
 								priority
+								fill
+								objectFit='contain'
+								sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
 							/>
+						
+						</div>
 						</div>
 					</div>
 				

@@ -63,26 +63,16 @@ const TechHub = () => {
 
 					{/* Begining Services Banner */}
 					<div className="col-span-12 lg:col-span-5 2xl:col-span-5 relative">
-						<Image
-							className="md:w-full h-auto mt-1"
-							src="/laptop.png"
-							alt="Laptop Display Our Services"
-							width={705.9}
-							height={540.69}
-							quality={100}
-							ayout="responsive"
-							priority
-						/>
-						<Image
-							className="absolute w-6/12 top-0 -left-6 2xl:-left-8"
-							src="/mobile.png"
-							alt="Mobile Our Services"
-							width={271.6}
-							height={307.57}
-							quality={100}
-							ayout="responsive"
-							priority
-						/>
+						<div className="relative pb-full">
+							<Image
+								className="md:w-full !h-10/12 mt-1"
+								src="/service_banner.png"
+								alt="Our Services Banner"
+								ayout="responsive"
+								fill
+								sizes="(max-width: 768px)50vw, 100vw"
+							/>
+						</div>
 					</div>
 
 					{/* Begining Services Collaps Section */}
