@@ -24,33 +24,35 @@ const BrandSlider = () => {
 		<Section className="bg-white border-b border-gray-100">
 			<Container>
 				<div className="overflow-hidden" id="brands-slider">
-					<div className="flex gap-x-28">
-						{brands.map((brand, idx) => (
-							<Image
-								key={idx}
-								className="flex-shrink-0 flex-grow-0 w-auto h-9 object-cover"
-								src={brand.image}
-								alt={brand.alt}
-								width={444}
-								height={211}
-								quality={100}
-								ayout="responsive"
-								priority
-							/>
-						))}
-						{brands.map((brand, idx) => (
-							<Image
-								key={`clone-${idx}`}
-								className="flex-shrink-0 flex-grow-0 w-auto h-9 object-cover"
-								src={brand.image}
-								alt={brand.alt}
-								width={444}
-								height={211}
-								quality={100}
-								ayout="responsive"
-								priority
-							/>
-						))}
+					<div className="flex gap-x-16 md:gap-x-28">
+						<div className="grid grid-cols-10 gap-x-16 md:gap-x-28 flex-shrink-0">
+							{brands.map((brand, idx) => (
+								<div key={idx} className="w-20 h-9 relative">
+									<Image
+										src={brand.image}
+										alt={brand.alt}
+										fill
+										objectFit='contain'
+										ayout="responsive"
+										sizes="(max-width: 768px)50vw, 100vw"
+									/>
+								</div>
+							))}
+						</div>
+						<div className="grid grid-cols-10 gap-x-28 flex-shrink-0">
+							{brands.map((brand, idx) => (
+								<div key={`clone-${idx}`} className="w-20 h-9 relative">
+									<Image
+										src={brand.image}
+										alt={brand.alt}
+										fill
+										objectFit='contain'
+										ayout="responsive"
+										sizes="(max-width: 768px)50vw, 100vw"
+									/>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</Container>

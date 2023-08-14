@@ -123,8 +123,7 @@ const OurWorks = () => {
 										fill
 										objectfit-cover="true"
 										object-center="true"
-										quality={100}
-										priority
+										quality={75}
 										sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
 									/>
 									<div className="triangle w-2/3 h-3/4 md:w-1/2 md:h-3/4 absolute -top-1 -left-2"></div>

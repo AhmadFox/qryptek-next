@@ -20,7 +20,6 @@ const OurStory = () => {
 				height={454}
 				ayout="responsive"
 				sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
-				priority
 			/>
 		</div>
 		<Container>
@@ -32,7 +31,6 @@ const OurStory = () => {
 				height={472}
 				quality={100}
 				ayout="responsive"
-				priority
 			/>
 			<div className="grid 2xl:absolute bottom-20 grid-cols-12 md:-translate-y-24 md:-mb-24 2xl:mb-0 2xl:-translate-y-0">
 				<div className="md:col-start-2 xl:col-start-6 col-span-12 md:col-span-10 xl:col-span-6 grid gap-y-4">

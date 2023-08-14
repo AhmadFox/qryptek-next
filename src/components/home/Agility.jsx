@@ -73,7 +73,6 @@ const Agility = () => {
                 objectfit-cover="true"
                 object-center="true"
                 quality={100}
-                priority
                 sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
               />
             </div>

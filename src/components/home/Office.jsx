@@ -38,13 +38,12 @@ const Office = () => {
 				<div className="relative">
 					<Image
 						className="h-auto w-full max-w-max mx-auto lg:-translate-x-10"
-						src="/world_map.svg"
+						src="/world_map.png"
 						alt="World Map"
 						width={988}
 						height={472}
 						quality={100}
 						ayout="responsive"
-						priority
 					/>
 				</div>
 				<Title type='p' display='d6' className='text-center !text-sm sm:!text-lg !md:text-xl !lg:text-2xl my-12'>QrypteK Global Offices</Title>
