@@ -19,7 +19,7 @@ const OurStory = () => {
 				alt="Spheers Gradiant Right"
 				width={437}
 				height={454}
-				ayout="responsive"
+				layout="responsive"
 				sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
 			/>
 		</div>
