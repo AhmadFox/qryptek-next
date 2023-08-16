@@ -226,12 +226,3 @@ input[type=checkbox]:checked + label {
 	  transform: rotate(calc(var(--progress) * 3.6deg));
 	}
 }
-
-.fade-in {
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out; /* Adjust the duration and easing as needed */
-}
-  
-.fade-in.loaded {
-	opacity: 1;
-}

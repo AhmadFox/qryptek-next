@@ -7,6 +7,7 @@ import Section from '../ui/Section'
 import Container from '../ui/Container'
 import { ButtonLink } from '../ui/Buttons';
 import { Title } from '../ui/Titles';
+import LazyImage from '../ui/LazyImage';
 
 const OurStory = () => {
   return (
@@ -24,7 +25,7 @@ const OurStory = () => {
 		</div>
 		<Container>
 			<div className="w-full md:w-3/5 h-auto md:-translate-y-12">
-				<Image
+				<LazyImage
 					src="/grow_tree.png"
 					alt="Tree Grow Banner"
 					width={988}
