@@ -225,5 +225,4 @@ input[type=checkbox]:checked + label {
 	to {
 	  transform: rotate(calc(var(--progress) * 3.6deg));
 	}
-  }
-  
+}

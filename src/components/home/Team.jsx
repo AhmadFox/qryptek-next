@@ -71,7 +71,7 @@ const Team = () => {
 					alt="Spheers Gradiant Bottom"
 					fill
 					quality={100}
-					sizes="(max-width: 768px)100vw, 100vw"
+					sizes="100vw"
 				/>
 			</div>
 
@@ -170,7 +170,7 @@ const Team = () => {
 										objectfit-cover="true"
 										object-center="true"
 										quality={100}
-										sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
+										sizes="(min-width: 1840px) 291px, (min-width: 1740px) calc(20vw - 32px), (min-width: 1460px) calc(26.15vw - 35px), (min-width: 1280px) calc(30.63vw - 34px), (min-width: 1040px) 33.64vw, (min-width: 780px) calc(50vw - 44px), (min-width: 500px) 61.54vw, (min-width: 460px) calc(100vw - 32px), (min-width: 420px) 388px, (min-width: 340px) calc(66.67vw + 81px), 268px"
 									/>
 								</figure>
 								<div className="grid gap-y-2 group-hover:text-orange-500 ease-in-out duration-300">

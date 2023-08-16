@@ -4,7 +4,7 @@ import tw, { styled } from "twin.macro";
 
 // Styled Components For Export [ use on Navbar Component ]
 export const Nav = tw.nav`py-3 md:py-4 fixed w-full top-0 z-[4] bg-opacity-0 ease-in-out duration-500 overflow-hidden`;
-export const BluredBg = tw.div`absolute w-full h-full top-0 left-0 backdrop-blur-md bg-dark bg-opacity-50 ease-in-out duration-500`;
+export const BluredBg = tw.div`absolute w-full h-full top-0 left-0 backdrop-blur-md bg-dark bg-opacity-50 opacity-0 ease-in-out duration-500`;
 export const NavFlex = styled.div`
   ${tw`flex flex-col gap-y-4 md:flex-row items-center`} justify-content:${(
 	props

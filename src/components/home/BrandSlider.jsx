@@ -34,7 +34,7 @@ const BrandSlider = () => {
 										fill
 										objectFit='contain'
 										ayout="responsive"
-										sizes="(max-width: 768px)50vw, 100vw"
+										sizes="80px"
 									/>
 								</div>
 							))}
@@ -48,7 +48,7 @@ const BrandSlider = () => {
 										fill
 										objectFit='contain'
 										ayout="responsive"
-										sizes="(max-width: 768px)50vw, 100vw"
+										sizes="80px"
 									/>
 								</div>
 							))}

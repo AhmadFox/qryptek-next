@@ -47,7 +47,7 @@ const Navbar = () => {
 	
 	return (
 		<Nav>
-			{ bluredNav && <BluredBg /> }
+			<BluredBg className={`${bluredNav && '!opacity-100'}`} />
 			<Container>
 
 				<div className="flex justify-between items-center">
