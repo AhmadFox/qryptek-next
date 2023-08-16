@@ -40,8 +40,8 @@ const HomeHeader = () => {
 				loading = 'lazy'
 				fill
 				sizes="100vw"
-				placeholder="blur"
 				onLoad={(e) => e.target.classList.add('opacity-100')}
+				placeholder="blur"
       			blurDataURL={rgbDataURL(13, 5, 24)}
 			/>
 			<Section variant="hero-block" className="h-full">
@@ -78,6 +78,8 @@ const HomeHeader = () => {
 								width={947}
 								height={898}
 								quality={100}
+								placeholder="blur"
+								blurDataURL={rgbDataURL(13, 5, 24)}
 								sizes="(min-width: 1940px) 479px, (min-width: 1460px) 24.57vw, (min-width: 780px) 29.7vw, calc(66.52vw - 21px)"/>
 						
 						</div>
