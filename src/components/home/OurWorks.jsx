@@ -123,8 +123,8 @@ const OurWorks = () => {
 										fill
 										objectfit-cover="true"
 										object-center="true"
-										quality={75}
-										sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
+										quality={100}
+										sizes="(min-width: 1940px) 584px, (min-width: 1040px) 29.89vw, (min-width: 780px) calc(44.17vw - 36px), (min-width: 500px) 61.54vw, (min-width: 460px) calc(100vw - 32px), (min-width: 420px) 388px, (min-width: 340px) calc(66.67vw + 81px), 268px"
 									/>
 									<div className="triangle w-2/3 h-3/4 md:w-1/2 md:h-3/4 absolute -top-1 -left-2"></div>
 									<figcaption className='text-dark text-base xl:text-xl 3xl:text-2xl font-bold font-primary relative z-[1] top-3 2xl:top-5 left-2 2xl:left-3'>{item.caption}</figcaption>

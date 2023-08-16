@@ -17,21 +17,20 @@ const HomeHeader = () => {
 
 	return (
 		<Header type='hero'>
-			<div className="h-full w-full absolute -translate-y-24 z-[-1]">
-				<Image
-					className="absolute top-0 right-0 object-cover"
-					src="/bg_home_header.jpg"
-					alt="Header Matrix Parten Background"
-					quality={100}
-					fill
-					sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
-					priority
-				/>
-			</div>
+			<Image
+				className='translate-y-4 z-[-1]'
+				src="/bg_home_header.webp"
+				alt="Header Matrix Parten Background"
+				quality={100}
+				objectFit='cover'
+				fill
+				sizes="100vw"
+				priority
+			/>
 			<Section variant="hero-block" className="h-full">
 				<Container className="h-full flex items-center">
 				
-					<div className="grid grid-cols-12 gap-6 items-center xl:translate-y-10">
+					<div className="grid grid-cols-12 gap-6 items-center xl:translate-y-14">
 
 						{/* Beginning Heading Text */}
 						<div className="col-span-12 md:col-span-8 xl:pt-52">
@@ -52,18 +51,15 @@ const HomeHeader = () => {
 
 						{/* Beginning Cube Block Banner */}
 						<div className="col-span-12 md:col-span-4 2xl:pr-12 2xl:pl-4 order-1 xl:-translate-x-2">
-						<div className="relative w-2/3 md:w-full pb-10/12 md:pb-full mt-1">
+						<div className="relative w-2/3 md:w-full">
 							<Image
 								src="/cube_block.png"
 								alt="Cubes Block Banner"
-								ayout="responsive"
-								placeholder="blur"
-								blurDataURL="/cube_block_blured.png"
 								priority
-								fill
-								objectFit='contain'
-								sizes="(max-width: 491px)50vw ,(max-width: 768px) 70vw, 100vw"
-							/>
+								width={947}
+								height={898}
+								quality={100}
+								sizes="(min-width: 1940px) 479px, (min-width: 1460px) 24.57vw, (min-width: 780px) 29.7vw, calc(66.52vw - 21px)"/>
 						
 						</div>
 						</div>

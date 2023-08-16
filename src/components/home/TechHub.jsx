@@ -70,7 +70,7 @@ const TechHub = () => {
 								alt="Our Services Banner"
 								ayout="responsive"
 								fill
-								sizes="(max-width: 768px)50vw, 100vw"
+								sizes="(min-width: 1940px) 698px, (min-width: 1040px) calc(34.2vw + 41px), calc(97.78vw - 25px)"
 							/>
 						</div>
 					</div>

@@ -10,7 +10,7 @@ import { Title } from '../ui/Titles';
 
 const OurStory = () => {
   return (
-	<Section variant="xl" className="relative overflow-hidden xl:!pb-28">
+	<Section variant="xl" className="relative overflow-hidden xl:!py-28">
 		<div className="absolute top-0 right-0  z-[-1]">
 			<Image
 				className="md:w-3/4 3xl:w-full h-auto ml-auto opacity-20"
@@ -23,15 +23,17 @@ const OurStory = () => {
 			/>
 		</div>
 		<Container>
-			<Image
-				className="w-full md:w-3/5 h-auto md:-translate-y-12"
-				src="/grow_tree.png"
-				alt="Tree Grow Banner"
-				width={988}
-				height={472}
-				quality={100}
-				ayout="responsive"
-			/>
+			<div className="w-full md:w-3/5 h-auto md:-translate-y-12">
+				<Image
+					src="/grow_tree.png"
+					alt="Tree Grow Banner"
+					width={988}
+					height={472}
+					quality={100}
+					layout="responsive"
+					sizes="(min-width: 1840px) 1676px, 92.11vw"
+				/>
+			</div>
 			<div className="grid 2xl:absolute bottom-20 grid-cols-12 md:-translate-y-24 md:-mb-24 2xl:mb-0 2xl:-translate-y-0">
 				<div className="md:col-start-2 xl:col-start-6 col-span-12 md:col-span-10 xl:col-span-6 grid gap-y-4">
 					<Title type='h2' display='d1' className='text-center md:text-start'>our story</Title>
