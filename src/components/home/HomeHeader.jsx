@@ -15,17 +15,34 @@ const HomeHeader = () => {
 
 	const { openRequsetModal } = useRequsetModal();
 
+	const keyStr =
+  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+
+	const triplet = (e1= number, e2= number, e3= number) =>
+  keyStr.charAt(e1 >> 2) +
+  keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+  keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+  keyStr.charAt(e3 & 63)
+
+	const rgbDataURL = (r= number, g= number, b= number) =>
+  `data:image/gif;base64,R0lGODlhAQABAPAA${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`
+
 	return (
 		<Header type='hero'>
 			<Image
-				className='translate-y-4 z-[-1]'
+				className='translate-y-4 z-[-1] ease-in-out duration-300 opacity-0'
 				src="/bg_home_header.webp"
 				alt="Header Matrix Parten Background"
 				quality={100}
 				objectFit='cover'
+				loading = 'lazy'
 				fill
 				sizes="100vw"
-				priority
+				placeholder="blur"
+				onLoad={(e) => e.target.classList.add('opacity-100')}
+      			blurDataURL={rgbDataURL(13, 5, 24)}
 			/>
 			<Section variant="hero-block" className="h-full">
 				<Container className="h-full flex items-center">
@@ -54,8 +71,10 @@ const HomeHeader = () => {
 						<div className="relative w-2/3 md:w-full">
 							<Image
 								src="/cube_block.png"
+								className='ease-in-out duration-300 opacity-0'
 								alt="Cubes Block Banner"
-								priority
+								loading = 'lazy'
+								onLoad={(e) => e.target.classList.add('opacity-100')}
 								width={947}
 								height={898}
 								quality={100}
