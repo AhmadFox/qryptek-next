@@ -1,6 +1,7 @@
 // Import Packeges:
 import Image from 'next/image';
 
+
 // Import Contexts:
 import { useRequsetModal } from '@/context/RequsetModalContext';
 
@@ -10,6 +11,7 @@ import Section from "../ui/Section"
 import { Title } from "../ui/Titles";
 import { Button } from '../ui/Buttons';
 import Header from '../ui/Header';
+import LazyImage from '../ui/LazyImage';
 
 const HomeHeader = () => {
 
@@ -68,21 +70,19 @@ const HomeHeader = () => {
 
 						{/* Beginning Cube Block Banner */}
 						<div className="col-span-12 md:col-span-4 2xl:pr-12 2xl:pl-4 order-1 xl:-translate-x-2">
-						<div className="relative w-2/3 md:w-full">
-							<Image
-								src="/cube_block.png"
-								className='ease-in-out duration-300 opacity-0'
-								alt="Cubes Block Banner"
-								loading = 'lazy'
-								onLoad={(e) => e.target.classList.add('opacity-100')}
-								width={947}
-								height={898}
-								quality={100}
-								placeholder="blur"
-								blurDataURL={rgbDataURL(13, 5, 24)}
-								sizes="(min-width: 1940px) 479px, (min-width: 1460px) 24.57vw, (min-width: 780px) 29.7vw, calc(66.52vw - 21px)"/>
-						
-						</div>
+							<div className="relative w-2/3 md:w-full">
+								<LazyImage
+									src="/cube_block.png"
+									alt="Cubes Block Banner"
+									loading = 'lazy'
+									property='true'
+									width={947}
+									height={898}
+									quality={100}
+									layout='responsive'
+									sizes="(min-width: 1940px) 479px, (min-width: 1460px) 24.57vw, (min-width: 780px) 29.7vw, calc(66.52vw - 21px)"
+								/>
+							</div>
 						</div>
 					</div>
 				
