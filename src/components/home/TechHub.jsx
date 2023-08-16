@@ -58,6 +58,7 @@ const TechHub = () => {
 					fill
 					sizes="(max-width: 768px)100vw, 100vw"
 				/>
+				
 			</div>
 			<Container className="relative z-1">
 				<div className="grid grid-cols-12">
