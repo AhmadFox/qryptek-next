@@ -33,7 +33,6 @@ const BrandSlider = () => {
 										alt={brand.alt}
 										fill
 										objectFit='contain'
-										ayout="responsive"
 										sizes="80px"
 									/>
 								</div>
@@ -47,7 +46,6 @@ const BrandSlider = () => {
 										alt={brand.alt}
 										fill
 										objectFit='contain'
-										ayout="responsive"
 										sizes="80px"
 									/>
 								</div>

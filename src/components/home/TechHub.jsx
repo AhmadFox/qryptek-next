@@ -7,6 +7,7 @@ import Section from '../ui/Section';
 import Container from '../ui/Container';
 import { Button, ButtonLink } from '../ui/Buttons';
 import Link from 'next/link';
+import LazyImage from '../ui/LazyImage';
 import { Count, SubTitle, Title } from '../ui/Titles';
 
 const services = [
@@ -64,12 +65,12 @@ const TechHub = () => {
 					{/* Begining Services Banner */}
 					<div className="col-span-12 lg:col-span-5 2xl:col-span-5 relative">
 						<div className="relative pb-full">
-							<Image
+							<LazyImage
 								className="md:w-full !h-10/12 mt-1"
 								src="/service_banner.png"
 								alt="Our Services Banner"
-								ayout="responsive"
 								fill
+								quality={100}
 								sizes="(min-width: 1940px) 698px, (min-width: 1040px) calc(34.2vw + 41px), calc(97.78vw - 25px)"
 							/>
 						</div>
