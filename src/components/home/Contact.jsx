@@ -24,7 +24,7 @@ const Contact = () => {
 					alt="Checago City Night"
 					fill
 					quality={100}
-					sizes="100vw"
+					sizes="(max-width: 768px)100vw, 100vw"
 				/>
 			</div>
 
