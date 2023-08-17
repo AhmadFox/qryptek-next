@@ -43,10 +43,9 @@ const Office = () => {
 						width={988}
 						height={472}
 						quality={100}
-						layout="responsive"
 					/>
 				</div>
-				<Title type='p' display='d6' className='text-center !text-sm sm:!text-lg !md:text-xl !lg:text-2xl my-12'>QrypteK Global Offices</Title>
+				<Title type='p' display='d6' className='text-center !text-sm sm:!text-lg md:!text-xl lg:!text-2xl my-12'>QrypteK Global Offices</Title>
 
 				<div className="md:w-1/2 mx-auto text-center xl:mt-24 relative">
 			
